@@ -2,3 +2,190 @@
 
 @import "main";
 
+
+
+.dashboard-content-header {
+
+  position: relative;
+  margin-bottom: 100px;
+
+  .text {
+    display: inline-block;
+    margin-right: 45px;
+
+    &.large {
+      display: block;
+    }
+  }
+
+  #dashboard-more-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    svg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      top: 50%;
+    }
+  }
+}
+
+.arrow-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.stats-left {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #CBD0E1;
+  padding: 40px 50px 50px;
+}
+
+.stats-right {
+  width: 50%;
+  float: right;
+  padding: 40px 50px;
+}
+
+.stats-bars-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.stats-bar-group {
+  height: 150px;
+  position: relative;
+  width: 35px;
+}
+
+.stat-bar {
+  width: 15px;
+  border-radius: 5px;
+  background-color: #76D1D8;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  &.h-25 {
+    height: 25%;
+  }
+
+  &.h-35 {
+    height: 35%;
+  }
+
+  &.h-45 {
+    height: 45%;
+  }
+
+  &.h-55 {
+    height: 55%;
+  }
+
+  &.h-65 {
+    height: 65%;
+  }
+
+  &.h-75 {
+    height: 75%;
+  }
+
+  &.purple {
+    background-color: #C688F1;
+    right: 0;
+    bottom: 0;
+    left: initial;
+  }
+
+}
+
+.stats-list-group {
+  margin-top: 80px;
+
+  .text-container {
+    width: calc(100% - 90px);
+    display: inline-block;
+    padding-left: 20px;
+    vertical-align: middle;
+    position: relative;
+
+    //img {
+    //  position: absolute;
+    //  right: 0;
+    //  top: 50%;
+    //  transform: translateY(-50%);
+    //}
+  }
+
+  .text:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.stat-oval {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  border: 25px solid #FFE6F8;
+  background-color: #FF8CDF;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bottom-stats-container {
+  margin-top: 35px;
+
+  .stats-section {
+    width: 48%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 7px 17px -10px #CEDAF7;
+    overflow: auto;
+
+
+    &.left {
+      float: left;
+    }
+
+    &.right {
+      float: right;
+    }
+  }
+}
+
+.bottom-stats-text-container {
+  //margin-bottom: 35px;
+  padding: 50px 50px 35px;
+
+  .text:last-child {
+    margin-bottom: 0;
+  }
+
+  &.dark {
+
+  }
+}
+
+.profile-container {
+  position: relative;
+  border-top: 1px solid #CBD0E1;
+  padding: 50px;
+
+  .oval {
+    margin-right: 5px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .arrow-right {
+    right: 50px;
+  }
+}
