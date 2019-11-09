@@ -25,8 +25,28 @@ body {
     margin-bottom: 25px;
   }
 
+  &.w-40 {
+    width: 40%;
+  }
+
+  &.w-50 {
+    width: 50%;
+  }
+
+  &.w-60 {
+    width: 60%;
+  }
+
   &.w-70 {
     width: 70%;
+  }
+
+  &.w-80 {
+    width: 80%;
+  }
+
+  &.w-90 {
+    width: 90%;
   }
 
 }
@@ -96,8 +116,28 @@ body {
     transition: background-color 0.3s ease-in-out;
 
 
+    &.w-40 {
+      width: 40%;
+    }
+
+    &.w-50 {
+      width: 50%;
+    }
+
+    &.w-60 {
+      width: 60%;
+    }
+
     &.w-70 {
       width: 70%;
+    }
+
+    &.w-80 {
+      width: 80%;
+    }
+
+    &.w-90 {
+      width: 90%;
     }
   }
 
