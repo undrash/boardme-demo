@@ -1,5 +1,149 @@
 
 
+@import "style-resets";
+
 body {
-  background-color: #5787ff;
+  background: linear-gradient(44.75deg, #EBF2FF 0%, #FCFDFF 100%);
+  margin: 0;
+}
+
+.text {
+  height: 10px;
+  border-radius: 9px;
+  width: 100%;
+  background-color: #98A3C3;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease-in-out;
+
+  &.nav {
+    background-color: #3F59A6;
+
+  }
+
+  &.medium {
+    height: 18px;
+    margin-bottom: 25px;
+  }
+
+  &.w-70 {
+    width: 70%;
+  }
+
+}
+
+
+.oval {
+  height: 50px;
+  width: 50px;
+  background-color: #98A3C3;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 15px;
+  transition: background-color 0.3s ease-in-out;
+
+  &.nav {
+    background-color: #3F59A6;
+  }
+}
+
+.svg-bg {
+  transition: fill 0.3s ease-in-out;
+}
+
+.sidebar-nav {
+  height: 100vh;
+  background: linear-gradient(180deg, #20346B 0%, #222D4F 100%);
+  width: 330px;
+  float: left;
+  position: relative;
+
+  .nav-links-container {
+    margin-top: 50px;
+  }
+
+
+
+  .link-btn-wrapper {
+    padding: 25px 30px 25px 50px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #465C9E;
+
+      .link-btn {
+        background-color: #a7c6de;
+      }
+
+      .svg-bg {
+        fill: #a7c6de;
+      }
+    }
+
+    img, svg {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+
+  .link-btn {
+    background-color: #3F59A6;
+    height: 10px;
+    border-radius: 9px;
+    width: 100%;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+
+
+    &.w-70 {
+      width: 70%;
+    }
+  }
+
+
+  .nav-text-container {
+    padding: 0 30px 0 50px;
+    margin-top: 100px;
+  }
+
+  .nav-footer-container {
+    background-color: #131F45;
+    width: 330px;
+    padding: 35px;
+    position: fixed;
+    bottom: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #101a34;
+
+      .oval, .text {
+        background-color: #a7c6de;
+      }
+    }
+  }
+
+  .footer-text-container {
+    display: inline-block;
+    width: calc(100% - 70px);
+
+    .medium {
+      margin-bottom: 20px;
+    }
+
+    .footer-text {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.main-content-container {
+  width: calc(100% - 330px);
+  display: inline-block;
+  height: 100vh;
+  //background-color: grey;
+  float: right;
 }
