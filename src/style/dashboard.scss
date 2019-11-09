@@ -143,12 +143,15 @@
 .bottom-stats-container {
   margin-top: 35px;
 
+
   .stats-section {
     width: 48%;
     border-radius: 5px;
     background-color: #FFFFFF;
     box-shadow: 0 7px 17px -10px #CEDAF7;
     overflow: auto;
+    min-height: 380px;
+    position: relative;
 
 
     &.left {
@@ -158,20 +161,37 @@
     &.right {
       float: right;
     }
+
+    &.dark {
+      background: linear-gradient(180deg, #20346B 0%, #222D4F 100%);
+
+      .text {
+        background-color: #3F59A6;
+      }
+    }
+
+    .nav-btn-container {
+      position: absolute;
+      width: 140px;
+      bottom: 50px;
+      right: 50px;
+
+      .btn {
+        display: inline-block;
+      }
+    }
   }
 }
 
 .bottom-stats-text-container {
-  //margin-bottom: 35px;
   padding: 50px 50px 35px;
+
 
   .text:last-child {
     margin-bottom: 0;
   }
 
-  &.dark {
 
-  }
 }
 
 .profile-container {
@@ -187,5 +207,98 @@
 
   .arrow-right {
     right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .stats-bar-group:first-child, .stats-bar-group:last-child {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1235px) {
+
+  .dashboard-content-header {
+    margin-bottom: 50px;
+  }
+
+  .stats-left, .stats-right {
+    padding: 40px 25px 25px;
+  }
+
+  .bottom-stats-container {
+    .stats-section {
+      min-height: 338px;
+    }
+  }
+
+
+  .bottom-stats-text-container {
+    padding: 40px 25px 25px;
+  }
+
+  .profile-container {
+    padding: 40px 25px 40px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  //.main-content-container {
+  //  height: 100%;
+  //}
+}
+
+@media only screen and (max-width: 750px) {
+
+  //.main-content-container {
+  //  height: 100%;
+  //  padding: 100px 25px 25px;
+  //}
+
+  .stats-left {
+    width: 100%;
+    border-bottom: 1px solid #CBD0E1;
+    border-right: none;
+  }
+
+  .stats-right {
+    width: 100%;
+  }
+
+  .stats-bar-group:first-child, .stats-bar-group:last-child {
+    display: block;
+  }
+
+  .bottom-stats-container {
+
+    .stats-section {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+
+  .dashboard-content-header {
+    .text {
+      display: block;
+    }
+  }
+
+  .stats-bar-group:first-child, .stats-bar-group:last-child {
+    display: none;
+  }
+
+  .profile-container {
+    .oval {
+      width: 50px;
+      height: 50px;
+    }
+
+    .arrow-right {
+      right: 25px;
+    }
   }
 }

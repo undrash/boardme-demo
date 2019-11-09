@@ -110,6 +110,26 @@ body {
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
 
+  &.dark {
+    background-color: #465C9E;
+    box-shadow: 0 7px 16px -10px #000000;
+
+    &:hover {
+      box-shadow: 0 7px 30px -10px #000000;
+    }
+
+    &.arrow-right-btn {
+      background: url("img/arrow-right-colored.svg") center no-repeat rgba(70, 92, 158, 0.5);
+      float: right;
+    }
+
+    &.arrow-left-btn {
+      background: url("img/arrow-left-colored.svg") center no-repeat rgba(70, 92, 158, 0.5);
+      float: left;
+    }
+
+  }
+
   &:hover {
     box-shadow: 0 7px 30px -10px #a6bbec;
 
@@ -119,6 +139,25 @@ body {
   }
 }
 
+
+.nav-btn {
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  box-shadow: 0 7px 16px -10px #CEDAF7;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.mini-menu-btn {
+  background: url("img/list-white.svg") no-repeat center #3F59A6;
+  border-radius: 50px;
+  margin: 30px 0 0 50px;
+  width: 150px;
+  height: 50px;
+  display: none;
+}
 
 .white-bg {
   border-radius: 5px;
@@ -138,7 +177,7 @@ body {
   background: linear-gradient(180deg, #20346B 0%, #222D4F 100%);
   width: 330px;
   float: left;
-  position: relative;
+  position: fixed;
 
   .nav-content-container {
     overflow-y: auto;
@@ -261,10 +300,51 @@ body {
 
 .main-content-container {
   width: calc(100% - 330px);
+  max-width: 1800px;
   display: inline-block;
   height: 100vh;
-  //background-color: grey;
-  float: right;
-  padding: 100px;
+  float: left;
+  margin-left: 330px;
+  padding: 100px 100px 20px;
+  overflow: auto;
 }
 
+@media only screen and (max-width: 1235px) {
+
+  .main-content-container {
+    padding: 100px 50px 50px;
+    overflow: initial;
+    height: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .sidebar-nav {
+    display: none;
+  }
+
+  .mini-menu-btn {
+    display: block;
+  }
+
+  .main-content-container {
+    width: 100%;
+    padding: 50px;
+    //height: 92vh;
+  }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+  .mini-menu-btn {
+    margin: 30px 0 0 25px;
+  }
+
+  .main-content-container {
+    height: 100%;
+    padding: 50px 25px 25px;
+  }
+}
