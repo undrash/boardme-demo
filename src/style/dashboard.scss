@@ -5,7 +5,6 @@
 
 
 .dashboard-content-header {
-
   position: relative;
   margin-bottom: 100px;
 
@@ -104,7 +103,6 @@
     bottom: 0;
     left: initial;
   }
-
 }
 
 .stats-list-group {
@@ -116,13 +114,6 @@
     padding-left: 20px;
     vertical-align: middle;
     position: relative;
-
-    //img {
-    //  position: absolute;
-    //  right: 0;
-    //  top: 50%;
-    //  transform: translateY(-50%);
-    //}
   }
 
   .text:last-child {
@@ -143,7 +134,6 @@
 .bottom-stats-container {
   margin-top: 35px;
 
-
   .stats-section {
     width: 48%;
     border-radius: 5px;
@@ -152,7 +142,6 @@
     overflow: auto;
     min-height: 380px;
     position: relative;
-
 
     &.left {
       float: left;
@@ -186,12 +175,9 @@
 .bottom-stats-text-container {
   padding: 50px 50px 35px;
 
-
   .text:last-child {
     margin-bottom: 0;
   }
-
-
 }
 
 .profile-container {
@@ -210,11 +196,70 @@
   }
 }
 
+
+.side-panel {
+  width: 35%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  box-shadow: 0 7px 86px -10px rgba(3,42,133,0.51);
+  background-color: #FFFFFF;
+  padding: 100px 60px 60px;
+  overflow: auto;
+}
+
+#side-panel-close-btn {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.side-panel-header {
+  margin-bottom: 50px;
+
+  .text {
+    display: inline-block;
+
+    &:first-child {
+      margin-right: 45px;
+    }
+  }
+}
+
+.text-group {
+  margin-bottom: 70px;
+
+  .large {
+    margin-bottom: 20px;
+  }
+
+  .secondary-btn {
+    margin-top: 30px;
+  }
+}
+
+.stats-list-container {
+
+
+  .stats-list-group {
+    border-top: 1px solid #CBD0E1;
+    margin-top: 0;
+    padding: 25px 0;
+  }
+}
+
+
+
+
+
+
 @media only screen and (max-width: 1450px) {
   .stats-bar-group:first-child, .stats-bar-group:last-child {
     display: none;
   }
 }
+
 
 
 @media only screen and (max-width: 1235px) {
@@ -233,7 +278,6 @@
     }
   }
 
-
   .bottom-stats-text-container {
     padding: 40px 25px 25px;
   }
@@ -243,18 +287,9 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  //.main-content-container {
-  //  height: 100%;
-  //}
-}
+
 
 @media only screen and (max-width: 750px) {
-
-  //.main-content-container {
-  //  height: 100%;
-  //  padding: 100px 25px 25px;
-  //}
 
   .stats-left {
     width: 100%;
@@ -278,6 +313,8 @@
     }
   }
 }
+
+
 
 @media only screen and (max-width: 520px) {
 

@@ -65,9 +65,7 @@ body {
   &.w-90 {
     width: 90%;
   }
-
 }
-
 
 .oval {
   height: 50px;
@@ -87,18 +85,32 @@ body {
   transition: fill 0.3s ease-in-out;
 }
 
+//----------------------------- BUTTONS ------------------------------
+
+.secondary-btn {
+  border: 1px solid #CBD0E1;
+  border-radius: 5px;
+  width: 240px;
+  padding: 20px 0;
+  text-align: center;
+
+  .text {
+    background-color: #CBD0E1;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
 .tab-btn {
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
     background-color: #3F59A6;
-
   }
 
   &.active {
     background-color: #3F59A6;
-
   }
 }
 
@@ -128,7 +140,6 @@ body {
       background: url("img/arrow-left-colored.svg") center no-repeat rgba(70, 92, 158, 0.5);
       float: left;
     }
-
   }
 
   &:hover {
@@ -139,7 +150,6 @@ body {
     }
   }
 }
-
 
 .nav-btn {
   height: 60px;
@@ -160,6 +170,21 @@ body {
   display: none;
 }
 
+.close-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: fill 0.3s ease-in-out;
+
+  &:hover {
+
+    .svg-bg {
+      fill: #3F59A6;
+    }
+
+  }
+}
+
 .white-bg {
   border-radius: 5px;
   background-color: #FFFFFF;
@@ -167,7 +192,6 @@ body {
   width: 100%;
   overflow: auto;
 }
-
 
 .margin-t-40 {
   margin-top: 40px;
@@ -184,7 +208,6 @@ body {
     overflow-y: auto;
     height: calc(100vh - 125px);
   }
-
 
   .nav-links-container {
     margin-top: 50px;
@@ -259,8 +282,6 @@ body {
     }
   }
 
-
-
   .nav-text-container {
     padding: 0 30px 0 50px;
     margin-top: 100px;
@@ -296,15 +317,12 @@ body {
       margin-bottom: 0;
     }
   }
-
 }
 
 .main-content-container {
   width: calc(100% - 330px);
   display: inline-block;
   height: 100vh;
-  //background-color: grey;
-  //float: right;
   max-width: 1700px;
   padding: 100px 100px 20px;
   overflow: auto;
@@ -313,6 +331,8 @@ body {
   margin-left: 330px;
 }
 
+
+
 @media only screen and (max-width: 1235px) {
 
   .main-content-container {
@@ -320,8 +340,9 @@ body {
     overflow: initial;
     height: 100%;
   }
-
 }
+
+
 
 @media only screen and (max-width: 1024px) {
 
@@ -348,11 +369,11 @@ body {
   .main-content-container {
     width: 100%;
     padding: 50px;
-    //height: 92vh;
     margin-left: 0;
   }
-
 }
+
+
 
 @media only screen and (max-width: 750px) {
 
