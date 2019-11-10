@@ -138,18 +138,35 @@ body {
   background-color: #FFFFFF;
   box-shadow: 0 7px 16px -10px #CEDAF7;
   cursor: pointer;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+
+  &.list {
+    float: right;
+    background: url("img/list.svg") center no-repeat #FFFFFF;
+    transition: background 0.3s ease-in-out;
+
+    &:hover, &.active {
+      background: url("img/list-active.svg") center no-repeat #FFFFFF;
+    }
+  }
+
+  &.card {
+    float: left;
+    background: url("img/cards.svg") center no-repeat #FFFFFF;
+
+    &:hover, &.active {
+      background: url("img/cards-active.svg") center no-repeat #FFFFFF;
+    }
+  }
 
   &.arrow-left-btn {
     background: url("img/arrow-left.svg") center no-repeat #FFFFFF;
     float: left;
-    transition: background 0.3s ease-in-out;
   }
 
   &.arrow-right-btn {
     background: url("img/arrow-right.svg") center no-repeat #FFFFFF;
     float: right;
-    transition: background 0.3s ease-in-out;
   }
 
   &.dark {
