@@ -48,7 +48,11 @@
 .stats-right {
   width: 50%;
   float: right;
-  padding: 40px 50px;
+  //padding: 40px 50px;
+
+  .text-container {
+    padding: 40px 50px 0;
+  }
 }
 
 .stats-bars-container {
@@ -106,23 +110,27 @@
 }
 
 .stats-list-group {
-  margin-top: 80px;
+  margin-top: 55px;
+  padding: 40px 50px 40px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #F5F8FF;
+  }
 
   .text-container {
     width: calc(100% - 90px);
     display: inline-block;
-    padding-left: 20px;
     vertical-align: middle;
     position: relative;
+
+    padding: 0 0 0 20px;
 
     .text:nth-child(2) {
       margin-bottom: 0;
     }
   }
-
-  //.text:last-child {
-  //  margin-bottom: 0;
-  //}
 }
 
 .stat-oval {
@@ -208,6 +216,12 @@
   position: relative;
   border-top: 1px solid #CBD0E1;
   padding: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #F5F8FF;
+  }
 
   .oval {
     margin-right: 5px;
