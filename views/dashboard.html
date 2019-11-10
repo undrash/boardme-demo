@@ -5,10 +5,11 @@
     <title>Dashboard</title>
 </head>
 <body>
-<script src="../build/dashboard.bundle.js"></script>
 
 
-<nav class="sidebar-nav">
+<!--Add class " visible " to slide sidebar nav in !!! Only works under 1024px !!! -->
+
+<nav class="sidebar-nav" id="sidebar-nav">
 
     <div class="nav-content-container">
 
@@ -138,7 +139,7 @@
 
 
 
-<div class="mini-menu-btn"></div>
+<div class="mini-menu-btn" id="mini-menu-btn"></div>
 
 <section class="main-content-container">
 
@@ -339,7 +340,10 @@
 
 </section>
 
-<section class="side-panel">
+
+<!--Add class " visible " to slide side panel in-->
+
+<section id="dashboard-side-panel" class="side-panel">
 
     <div class="side-panel-header">
 
@@ -447,6 +451,6 @@
 
 
 
-
+<script src="../build/dashboard.bundle.js"></script>
 </body>
 </html>

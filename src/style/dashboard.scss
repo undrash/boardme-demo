@@ -225,12 +225,19 @@
   width: 35%;
   height: 100%;
   position: fixed;
-  right: 0;
+  right: -580px;
   top: 0;
   box-shadow: 0 7px 86px -10px rgba(3,42,133,0.51);
   background-color: #FFFFFF;
-  //padding: 100px 60px 60px;
+  max-width: 530px;
   overflow: auto;
+  transition: right 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  &.visible {
+    right: 0;
+    top: 0;
+  }
+
 }
 
 #side-panel-close-btn {
