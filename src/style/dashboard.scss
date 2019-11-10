@@ -114,11 +114,15 @@
     padding-left: 20px;
     vertical-align: middle;
     position: relative;
+
+    .text:nth-child(2) {
+      margin-bottom: 0;
+    }
   }
 
-  .text:last-child {
-    margin-bottom: 0;
-  }
+  //.text:last-child {
+  //  margin-bottom: 0;
+  //}
 }
 
 .stat-oval {
@@ -129,6 +133,26 @@
   background-color: #FF8CDF;
   display: inline-block;
   vertical-align: middle;
+
+  &.purple {
+    background-color: #B48CFF;
+    border: 25px solid #EFE6FF;
+  }
+
+  &.red {
+    background-color: #FF8CA7;
+    border: 25px solid #FFE6EC;
+  }
+
+  &.yellow {
+    background-color: #FFCD8C;
+    border: 25px solid #FFF4E6;
+  }
+
+  &.blue {
+    background-color: #8CB4FF;
+    border: 25px solid #E6EEFF;
+  }
 }
 
 .bottom-stats-container {
@@ -205,7 +229,7 @@
   top: 0;
   box-shadow: 0 7px 86px -10px rgba(3,42,133,0.51);
   background-color: #FFFFFF;
-  padding: 100px 60px 60px;
+  //padding: 100px 60px 60px;
   overflow: auto;
 }
 
@@ -217,6 +241,7 @@
 
 .side-panel-header {
   margin-bottom: 50px;
+  padding: 100px 60px 50px;
 
   .text {
     display: inline-block;
@@ -229,6 +254,7 @@
 
 .text-group {
   margin-bottom: 70px;
+  padding: 0 60px;
 
   .large {
     margin-bottom: 20px;
@@ -245,7 +271,13 @@
   .stats-list-group {
     border-top: 1px solid #CBD0E1;
     margin-top: 0;
-    padding: 25px 0;
+    padding: 25px 60px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #F5F8FF;
+    }
   }
 }
 
@@ -289,6 +321,28 @@
 
 
 
+@media only screen and (max-width: 1024px) {
+  .side-panel {
+    width: 50%;
+  }
+
+  .side-panel-header {
+    padding: 100px 30px 25px;
+  }
+
+  .text-group {
+    padding: 0 25px;
+  }
+
+  .stats-list-container {
+    .stats-list-group {
+      padding: 25px;
+    }
+  }
+}
+
+
+
 @media only screen and (max-width: 750px) {
 
   .stats-left {
@@ -310,6 +364,43 @@
     .stats-section {
       width: 100%;
       margin-bottom: 35px;
+    }
+  }
+
+  .side-panel {
+    width: 75%;
+  }
+
+  .stats-list-container {
+
+    .stats-list-group {
+      padding: 25px 15px 25px 25px;
+
+      .text-container {
+        width: calc(100% - 65px);
+        padding-left: 10px;
+      }
+
+      .stat-oval {
+        width: 60px;
+        height: 60px;
+
+        &.purple {
+          border: 20px solid #EFE6FF;
+        }
+
+        &.red {
+          border: 20px solid #FFE6EC;
+        }
+
+        &.yellow {
+          border: 20px solid #FFF4E6;
+        }
+
+        &.blue {
+          border: 20px solid #E6EEFF;
+        }
+      }
     }
   }
 }

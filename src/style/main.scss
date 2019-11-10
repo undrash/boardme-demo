@@ -28,6 +28,8 @@ body {
   &.large {
     height: 25px;
     margin-bottom: 50px;
+    border-radius: 25px;
+
   }
 
   &.w-10 {
@@ -90,14 +92,29 @@ body {
 .secondary-btn {
   border: 1px solid #CBD0E1;
   border-radius: 5px;
-  width: 240px;
+  max-width: 240px;
   padding: 20px 0;
   text-align: center;
+  transition:  all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #ffffff;
 
   .text {
     background-color: #CBD0E1;
     display: inline-block;
     margin-bottom: 0;
+  }
+
+  &:hover {
+    border: 1px solid #3F59A6;
+    box-shadow: 0 7px 30px -10px #a6bbec;
+
+
+    .text {
+      background-color: #3F59A6;
+
+    }
+
   }
 }
 
