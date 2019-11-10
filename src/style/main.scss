@@ -140,6 +140,18 @@ body {
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
 
+  &.arrow-left-btn {
+    background: url("img/arrow-left.svg") center no-repeat #FFFFFF;
+    float: left;
+    transition: background 0.3s ease-in-out;
+  }
+
+  &.arrow-right-btn {
+    background: url("img/arrow-right.svg") center no-repeat #FFFFFF;
+    float: right;
+    transition: background 0.3s ease-in-out;
+  }
+
   &.dark {
     background-color: #465C9E;
     box-shadow: 0 7px 16px -10px #000000;
@@ -164,6 +176,14 @@ body {
 
     .svg-bg {
       fill: #3F59A6;
+    }
+
+    &.arrow-left-btn {
+      background: url("img/arrow-left-colored.svg") center no-repeat #FFFFFF;
+    }
+
+    &.arrow-right-btn {
+      background: url("img/arrow-right-colored.svg") center no-repeat #FFFFFF;
     }
   }
 }
@@ -209,6 +229,11 @@ body {
   box-shadow: 0 7px 17px -10px #CEDAF7;
   width: 100%;
   overflow: auto;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 7px 30px -10px #a6bbec;
+  }
 }
 
 .margin-t-40 {
@@ -300,6 +325,7 @@ body {
       background-color: #ffffff;
     }
   }
+
 
   .nav-text-container {
     padding: 0 30px 0 50px;

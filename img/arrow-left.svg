@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="19px" viewBox="0 0 12 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-left</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="List" transform="translate(-454.000000, -122.000000)" fill="#CBD0E1" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(430.000000, 100.000000)">
+                <path d="M28.7586207,36.4741186 L21.5141961,29.0650617 C20.8286013,28.3638864 20.8286013,27.2270567 21.5141961,26.5258814 C21.8434304,26.1891652 22.2899679,26 22.7555755,26 L37.2444245,26 C38.2140021,26 39,26.80386 39,27.7954716 C39,28.2716602 38.8150381,28.7283455 38.4858039,29.0650617 L31.2413793,36.4741186 C30.5557844,37.1752938 29.4442156,37.1752938 28.7586207,36.4741186 Z" id="arrow-left" transform="translate(30.000000, 31.500000) scale(-1, 1) rotate(-90.000000) translate(-30.000000, -31.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
