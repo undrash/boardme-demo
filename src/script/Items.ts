@@ -8,8 +8,8 @@ const listBtn                               = document.getElementById( "items-li
 const cardsBtn                              = document.getElementById( "items-card-btn" );
 const tableContent                          = document.getElementById( "items-table-content" );
 
-const sideMenuBtn                            = document.getElementById( "mini-menu-btn" );
-const sideBarNavPanel                            = document.getElementById( "sidebar-nav" );
+const sideMenuBtn                           = document.getElementById( "mini-menu-btn" );
+const sideBarNavPanel                       = document.getElementById( "sidebar-nav" );
 
 cardsBtn.addEventListener( "click", () => {
 
@@ -36,4 +36,13 @@ sideMenuBtn.addEventListener( "click", () => {
 
     sideBarNavPanel.classList.add("visible");
 
+});
+
+document.addEventListener( "click", (e: any) => {
+
+    if ( e.target.classList.contains( "mini-menu-btn" ) ) return;
+
+    if ( ! e.target.isSameNode( sideBarNavPanel ) ) {
+        sideBarNavPanel.classList.remove("visible");
+    }
 });
